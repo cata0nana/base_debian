@@ -37,6 +37,7 @@ mkdir /root/EXTRAT/firefox-97.0.1/
 echo "Install Package -firefox-53.0b9.tar.bz2"
 #https://ftp.mozilla.org/pub/firefox/releases/49.0b9/linux-x86_64/en-US/firefox-49.0b9.tar.bz2
 wget https://ftp.mozilla.org/pub/firefox/releases/49.0b9/linux-x86_64/en-US/firefox-49.0b9.tar.bz2 && tar -xf firefox-49.0b9.tar.bz2 -C /root/EXTRAT/firefox-49.0b9/
+wget https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && chmod +x chromedriver && cp chromedriver /usr/bin/chromedriver-109
 
 # wget https://ftp.mozilla.org/pub/firefox/releases/53.0.2/linux-x86_64-EME-free/en-GB/firefox-53.0.2.tar.bz2 && tar -xf firefox-53.0.2.tar.bz2 -C /root/EXTRAT/firefox-53.0.2/
 # wget https://ftp.mozilla.org/pub/firefox/releases/53.0b9/linux-x86_64/en-US/firefox-53.0b9.tar.bz2 && tar -xf firefox-53.0b9.tar.bz2 -C /root/EXTRAT/firefox-53.0b9/
