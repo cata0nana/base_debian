@@ -65,7 +65,7 @@ RUN apt-get -f install  -y \
         dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
         tightvncserver novnc python3-websockify python3-pyvirtualdisplay \
         build-essential \
-        xvfb xserver-xephyr ttf-wqy-zenhei python2.7
+        xvfb xserver-xephyr ttf-wqy-zenhei python2.7 ffmpeg
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
 RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
@@ -74,7 +74,7 @@ RUN apt-get update && apt-get install google-chrome-stable -y
 
 RUN pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
  pyvirtualdisplay pydub pyautogui emojis emoji  \
- mysql-connector-python device_detector selenium-stealth
+ mysql-connector-python device_detector selenium-stealth undetected_chromedriver names
 
 ################################## ADD FILES ##################################
 
